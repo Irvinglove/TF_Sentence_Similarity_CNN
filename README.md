@@ -4,4 +4,5 @@ This code belongs to the "[Implementing a CNN for Sentence Similarity in Tensorf
  - Python 2.7
  - Tensorflow 1.0
  - numpy
+ 
  Hava a good time!
