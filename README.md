@@ -5,5 +5,7 @@ This code is an implement of [Multi-Perspective Sentence Similarity Modeling wit
  - Python 2.7
  - Tensorflow 1.0
  - numpy
+# Notes:
+ If you don't have glove.6B.50d.txt file with \<unk\> vec, you can download it with this [address](http://pan.baidu.com/s/1nv5Lkwx).
  
  Hava a good time!
