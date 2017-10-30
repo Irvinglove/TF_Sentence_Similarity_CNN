@@ -98,4 +98,9 @@ class TextCNN(object):
 
         # Accuracy
         with tf.name_scope("pearson"):
-            _, self.pearson = tf.contrib.metrics.streaming_pearson_correlation(self.scores, self.input_y)
+            mid1 = tf.reduce_mean(self.scores * self.input_y) - \
+                   tf.reduce_mean(self.scores) * tf.reduce_mean(self.input_y)
+
+            mid2 = tf.sqrt(tf.reduce_mean(tf.square(self.scores)) - tf.square(tf.reduce_mean(self.scores))) * \
+                   tf.sqrt(tf.reduce_mean(tf.square(self.input_y)) - tf.square(tf.reduce_mean(self.input_y)))
+            self.pearson = mid1 / mid2
