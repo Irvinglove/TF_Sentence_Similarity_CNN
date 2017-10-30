@@ -9,7 +9,7 @@ This code belongs to the "[Implementing a CNN for Sentence Similarity in Tensorf
 # Notes:
  Because the glove file is too big, there is no way to upload. Please go to the official website to download [glove.6B.50d.txt](https://nlp.stanford.edu/projects/glove/). 
  
-# Attention
+# Attention:
 You should add 
  ```
  400000 50
